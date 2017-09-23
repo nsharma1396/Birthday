@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+
+body {
+  font-family: Verdana,sans-serif;
+  background-color: #e9ebee;
+  background-image: url("background.jpg");
+}
+
+.mySlides {display:none}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 100%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Caption text */
+.text {
+  color: mediumblue;
+  font-size: 20px;
+  padding: 4px 4px;
+  text-align: center;
+}
+
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 13px;
+  width: 13px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+</style>
+</head>
+<body>
+<div style="text-align: center;color: mediumblue">
+<h2>Happy Birthday Mummy <3</h2>
+<p>Wish you lots of happiness and love</p>
+</div>
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <img src="1.jpg" style=" width:50vw ; height:70vh">
+  <div class="text">There are no words to describe your love</div>
+</div>
+   
+<div class="mySlides fade">
+  <img src="2.JPG" style="width:50vw ; height:70vh">
+  <div class="text">The way you have always cared for us sacrificing your own happiness...</div>
+</div>
+
+<div class="mySlides fade">
+  <img src="3.JPG" style="width:50vw ; height:70vh">
+  <div class="text">Always binding us together with your unconditional love...</div>
+</div>
+
+<div class="mySlides fade">
+  <img src="4.jpg" style="width:50vw ; height:70vh">
+  <div class="text">Your love unites us and gives us strength...</div>
+</div>
+
+<div class="mySlides fade">
+  <img src="5.jpg" style="width:50vw ; height:70vh">
+  <div class="text">Your innocent smile has shown me how beautiful the world is...</div>
+</div>
+
+<div class="mySlides fade">
+  <img src="6.jpg" style="width:50vw ; height:70vh">
+  <div class="text">I look up to you all with admiration...</div>
+</div>
+
+<div class="mySlides fade">
+  <img src="7.JPG" style="width:50vw ; height:70vh">
+  <div class="text">You cared for each of us with utmost concern...</div>
+</div>
+
+<div class="mySlides fade">
+  <img src="8.jpg" style="width:50vw ; height:70vh">
+  <div class="text">Finding solace at the world's best place</div>
+</div>
+
+<div class="mySlides fade">
+  <img src="9.JPG" style="width:50vw ; height:70vh">
+  <div class="text">People idolize God, but We idolize You!</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="text">
+    Your teachings reflects in me,<br/>
+    Your guidance shows us the way,<br/>
+    Your happiness is our happiness,<br/>
+    Your kindness gives me hope,<br/>
+    Your scoldings make us stronger,<br/>
+    Your concerns about us are the manifestation of true love,<br/>
+    <br/><br/>
+    Words cannot describe how much we adore you<br/>
+    I promise to work harder than ever and bring pride to you and papa<br/>
+    Everyday I pray for you to recover soon so that when I come back,<br/>
+    You can cook my favourite dishes and pack my bags with the same enthusiasm<br/>
+    There's still alot that I can say here<br/>
+    But I will say only one thing<br/>
+    Thank you for being the best mother in the world<br/>
+    I Love You Mummy<br/>
+  </div>
+</div>
+
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+       slides[i].style.display = "none";  
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}    
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+    if(slideIndex-1 !== 9)
+     setTimeout(showSlides, 6000); // Change image every 4 seconds
+    else
+      setTimeout(showSlides, 25000);
+}
+</script>
+
+</body>
+</html> 
