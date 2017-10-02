@@ -3,21 +3,19 @@
 <head>
   <title>Birthday</title>
 </head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <style>
 
 body {
   font-family: Verdana,sans-serif;
-  background-color: #e9ebee;
   background-image: url("background.jpg");
+  background-repeat: repeat;
 }
 
 .mySlides {display:none}
 
 /* Slideshow container */
 .slideshow-container {
-  max-width: 1000px;
-  position: relative;
-  margin: auto;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -27,7 +25,6 @@ body {
 .text {
   color: mediumblue;
   font-size: 20px;
-  padding: 4px 4px;
   text-align: center;
 }
 
@@ -45,6 +42,10 @@ body {
 
 .active {
   background-color: #717171;
+}
+
+.image {
+   width:50vw ; height:70vh;
 }
 
 /* Fading animation */
@@ -66,60 +67,69 @@ body {
 }
 
 /* On smaller screens, decrease text size */
-@media only screen and (max-width: 300px) {
-  .text {font-size: 11px}
+@media screen and (max-width: 650px) {
+  .top {
+    font-size: 13px;
+  }
+  .image {
+    width: 75vw;
+  }
+  .text {
+    font-size: 13px;
+  }
 }
+
 </style>
 </head>
 <body>
-<div style="text-align: center;color: mediumblue">
+<div class="top" style="text-align: center;color: mediumblue">
 <h2>Happy Birthday Mummy <3</h2>
 <p>Wish you lots of happiness and love</p>
 </div>
 <div class="slideshow-container">
 
 <div class="mySlides fade">
-  <img src="1.jpg" style=" width:50vw ; height:70vh">
+  <img src="1.jpg" class="image">
   <div class="text">There are no words to describe your love</div>
 </div>
    
 <div class="mySlides fade">
-  <img src="2.JPG" style="width:50vw ; height:70vh">
-  <div class="text">The way you have always cared for us sacrificing<br/>your own happiness...</div>
+  <img src="2.JPG" class="image">
+  <div class="text">The way you have always cared for us<br/>sacrificing your own happiness...</div>
 </div>
 
 <div class="mySlides fade">
-  <img src="3.JPG" style="width:50vw ; height:70vh">
+  <img src="3.JPG" class="image">
   <div class="text">Always binding us together with your<br/>unconditional love...</div>
 </div>
 
 <div class="mySlides fade">
-  <img src="4.jpg" style="width:50vw ; height:70vh">
-  <div class="text">Your love unites us and gives us strength...</div>
+  <img src="4.jpg" class="image">
+  <div class="text">Your love unites us and gives<br/>us strength...</div>
 </div>
 
 <div class="mySlides fade">
-  <img src="5.jpg" style="width:50vw ; height:70vh">
+  <img src="5.jpg" class="image">
   <div class="text">Your innocent smile has shown me<br/>how beautiful the world is...</div>
 </div>
 
 <div class="mySlides fade">
-  <img src="6.jpg" style="width:50vw ; height:70vh">
+  <img src="6.jpg" class="image">
   <div class="text">I look up to you all with admiration...</div>
 </div>
 
 <div class="mySlides fade">
-  <img src="7.JPG" style="width:50vw ; height:70vh">
-  <div class="text">You cared for each of us with utmost concern...</div>
+  <img src="7.JPG" class="image">
+  <div class="text">You cared for each of us with<br/>utmost concern...</div>
 </div>
 
 <div class="mySlides fade">
-  <img src="8.jpg" style="width:50vw ; height:70vh">
+  <img src="8.jpg" class="image">
   <div class="text">Finding solace at the world's best place</div>
 </div>
 
 <div class="mySlides fade">
-  <img src="9.JPG" style="width:50vw ; height:70vh">
+  <img src="9.JPG" class="image">
   <div class="text">People idolize God, but We idolize You!</div>
 </div>
 
